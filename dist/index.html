@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple-website</title>
+  <script type="module" crossorigin>(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=document.getElementById(`title`),t=0,n=100;setInterval(()=>{e.style.transform=`scale(${Math.sin(t/n*2*Math.PI)/2+2})`,t++,t%=n},10);</script>
+  <style rel="stylesheet" crossorigin>@import "https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap";*{box-sizing:border-box;margin:0;padding:0}#title{text-align:center;color:red;font-family:Noto Serif JP,serif;display:block}#box{background-color:#ff0;justify-content:center;align-items:center;width:100vw;height:100vh;display:flex}
+/*$vite$:1*/</style>
+</head>
+
+<body>
+    <div id="box">
+        <h1 id="title">あけました<br>おめでとう</h1>
+    </div>
+</body>
+
+</html>
